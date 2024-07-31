@@ -11,9 +11,10 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="book in books">
+            <li v-for="book in books" :class="{favorite:book.isFav}">
                 <img :src="book.img" :alt="book.title" /></img>
                 <p> {{book.title}} - {{book.name}} - {{book.age}}</p>
+                <button @click="bookmark(book)">Bookmark book</button>
             </li>
         </ul>
     </div>

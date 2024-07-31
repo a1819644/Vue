@@ -22,8 +22,19 @@ li{
     background-color: white;
     border-radius: 10px;
 }
+li.favorite{
+    background-color:lightgreen;
+    text-decoration: aqua;
+}
 p{
     margin:0px;
     display: flex;
     align-items: center;
 }
+
+button{
+    margin: 100px 0px;
+    padding: 10px;
+
+}
+
